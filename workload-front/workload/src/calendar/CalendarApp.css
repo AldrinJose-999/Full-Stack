@@ -1,0 +1,91 @@
+/* CalendarDark.css */
+.rbc-calendar {
+  background-color: #1f2029;
+  color: #e2e3f3;
+  border-radius: 12px;
+}
+
+.rbc-toolbar {
+  background-color: transparent;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  color: #e2e3f3;
+}
+
+.rbc-month-view,
+.rbc-time-view,
+.rbc-agenda-view {
+  background-color: #1f2029;
+  color: #e2e3f3;
+}
+
+.rbc-header {
+  background-color: #2a2b38;
+  color: #e2e3f3;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.rbc-today {
+  background-color: #656568 !important;
+}
+
+.rbc-time-slot,
+.rbc-date-cell,
+.rbc-day-slot,
+.rbc-timeslot-group {
+  border-color: #333 !important;
+}
+
+.rbc-event {
+  background-color: #007bff !important;
+  color: white !important;
+  padding: 2px 4px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.rbc-selected-cell {
+  background-color: #374151 !important;
+}
+
+.rbc-off-range-bg {
+  background: #252633 !important;
+}
+
+.rbc-agenda-date-cell,
+.rbc-agenda-time-cell,
+.rbc-agenda-event-cell {
+  border-color: #444;
+}
+
+
+/* Hide time gutter (left column) */
+.rbc-time-gutter {
+  display: none;
+}
+
+/* Hide vertical time slot lines */
+.rbc-timeslot-group {
+  display: none;
+}
+
+/* Hide the background grid */
+.rbc-time-content > *:not(.rbc-allday-cell) {
+  display: none;
+}
+/* Removes default blue background and padding */
+.rbc-event {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: transparent !important;  /* hide text if any */
+}
+
+/* Prevent default blue highlight on selection */
+.rbc-selected {
+  background-color: transparent !important;
+  color: inherit !important;
+}

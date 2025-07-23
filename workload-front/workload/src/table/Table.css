@@ -1,0 +1,80 @@
+/* Make each cell look like a mini card */
+.table-card-front {
+  width: 100%;
+  height: 100%;
+  background-color: #2a2b38;
+  /* background-image: url('./raw/img.webp '); */
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+  position: absolute;
+  border-radius: 6px;
+  left: 0;
+  top: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.table-center-wrap{
+  position: absolute;
+  width: 100%;
+  padding: 0 35px;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 35px) perspective(100px);
+  z-index: 20;
+  display: block;
+}
+.cell-block {
+  background-color: #2a2b38;
+  color: #c4c3ca;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Slight hover effect */
+.cell-block:hover {
+  background-color: #1f2029;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Remove default table styles for better appearance */
+.timetable-block {
+  background-color: #1f2029;
+  border-collapse: separate;
+  border-spacing: 10px; /* adds spacing between cells */
+  width: 100%;
+  text-align: center;
+}
+
+.timetable-block th {
+  color: #ffeba7;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #1f2029;
+  border-radius: 4px;
+}
+.table-btn {
+  background-color: #1f2029;
+  color: #e2e3f3;
+  /* padding: 3px 5px;       Reduced padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;          /* Smaller font */
+  line-height: 1.2;
+  transition: background-color 0.3s ease;
+}
+.timetable-block td {
+  vertical-align: middle;
+  padding: 6px;
+}
